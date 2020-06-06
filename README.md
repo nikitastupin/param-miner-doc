@@ -11,7 +11,7 @@ I've used Param Miner for quite a long time but what many of it's checkboxes do 
 | Parameter name | Description |
 | - | - |
 | Add 'fcbz' cachebuster | ??? |
-| learn observed words | ??? |
+| learn observed words | If checked: Param Miner extracts words from responses and [saves](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/GrabScan.java#L21) them to current session's parameter wordlist. |
 | only report unique params | ??? |
 | use basic wordlist | ??? |
 | use custom wordlist | ? |
