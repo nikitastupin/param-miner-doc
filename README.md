@@ -10,7 +10,7 @@ I've used Param Miner for quite a long time but what many of it's checkboxes do 
 
 | Parameter name | Description |
 | - | - |
-| Add 'fcbz' cachebuster | ??? |
+| Add 'fcbz' cachebuster | If checked: Param Miner [adds `fcbz=1` parameter](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamGrabber.java#L88) to every request in order to avoid cache hits. |
 | learn observed words | If checked: Param Miner extracts words from responses and [saves](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/GrabScan.java#L21) them to current session's parameter wordlist. |
 | only report unique params | ? |
 | use basic wordlist | If checked: use [headers](https://github.com/PortSwigger/param-miner/blob/master/resources/headers) and [params](https://github.com/PortSwigger/param-miner/blob/master/resources/params) wordlists from Param Miner's repo. |
