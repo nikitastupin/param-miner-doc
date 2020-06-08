@@ -12,7 +12,7 @@ I've used Param Miner for quite a long time but what many of it's checkboxes do 
 | - | - |
 | Add 'fcbz' cachebuster | If checked: Param Miner [adds `fcbz=1` URL parameter](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamGrabber.java#L88) to every request in order to avoid cache hits. |
 | learn observed words | If checked: Param Miner extracts words from responses and [saves](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/GrabScan.java#L21) them to current session's parameter wordlist. |
-| only report unique params | ? |
+| only report unique params | [?](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamAttack.java#L256) |
 | use basic wordlist | If checked: use [headers](https://github.com/PortSwigger/param-miner/blob/master/resources/headers) and [params](https://github.com/PortSwigger/param-miner/blob/master/resources/params) wordlists from Param Miner's repo. |
 | use custom wordlist | ? |
 | bruteforce | ??? but used only at [this line](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamGuesser.java#L150) |
