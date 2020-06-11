@@ -16,7 +16,7 @@ I've used Param Miner for quite a long time but what many of it's checkboxes do 
 | use basic wordlist | If checked: use [headers](https://github.com/PortSwigger/param-miner/blob/master/resources/headers) and [params](https://github.com/PortSwigger/param-miner/blob/master/resources/params) wordlists from Param Miner's repo. |
 | use custom wordlist | Self explanatory. |
 | bruteforce | ??? but used only at [this line](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamGuesser.java#L150) |
-| dynamic keyload | ??? |
+| dynamic keyload | ??? This is the hard one - in order to understand it first need to understand how Param Miner works internally. Mostly related to [`ParamGuesser.addNewKeys`](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamGuesser.java#L517) function. |
 | max one per host+status | ??? |
 | enable auto-mine | If checked Param Miner will execute [launchScan](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamGrabber.java#L98) on every response processed at Proxy tab. Think of it like making Param Miner press `Guess *` buttons on every in-scope request for you. Also without it all other `auto-*` checkboxes won't take an effect. |
 | auto-mine cookies | ? |
