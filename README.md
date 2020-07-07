@@ -20,7 +20,7 @@ I've used Param Miner for quite a long time but what many of it's checkboxes do 
 | max one per host+status | ??? |
 | enable auto-mine | If checked Param Miner will execute [launchScan](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamGrabber.java#L98) on every response processed at Proxy tab. Think of it like making Param Miner press `Guess *` buttons on every in-scope request for you. Also without it all other `auto-*` checkboxes won't take an effect. |
 | auto-mine cookies | ? |
-| auto-nest params | ??? |
+| auto-nest params | ??? This is the tough one, need further investigation. First it [finds the most frequently occuring prefix](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/BurpExtender.java#L316) and then [uses it here](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/BurpExtender.java#L355). |
 | try cache poison | ? |
 | try -_ bypass | If checked: for every HTTP header with at least one dash Param Miner will [replace dashes `-` with underscores `_` and add resulting header to wordlist](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamHolder.java#L37). Here is [good explanation](https://telekomsecurity.github.io/2020/05/smuggling-http-headers-through-reverse-proxies.html) of why this works. |
 | rotation interval | ??? |
