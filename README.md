@@ -40,7 +40,7 @@ I've used Param Miner for quite a long time but what many of it's checkboxes do 
 | try method flip | If checked: for every [non-GET](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamAttack.java#L163) request [will use Burp's `toggleRequestMethod`](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamAttack.java#L166) which `can be used to toggle a request's method between GET and POST. Parameters are relocated between the URL query string and message body as required, and the Content-Length header is created or removed as applicable`. Finally results in [this branch](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamGuesser.java#L276) getting executed which tries to identify new parameters by making non-GET requests as GET requests. |
 | thread pool size | ? |
 | rotation increment | ??? |
-| max bucketsize | ? |
+| max bucketsize | [Maximum number of parameters probed in one request](https://github.com/PortSwigger/param-miner/blob/26db2f47b2e7852b977e776ebe13c1b887474b32/src/burp/ParamAttack.java#L226). Note that for JSON parameters maximum bucketsize is 256. |
 
 ## Contribution
 
